@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'geomanistregular';
+    src: url('geomanist-regular-webfont.eot');
+    src: url('geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('geomanist-regular-webfont.woff2') format('woff2'),
+         url('geomanist-regular-webfont.woff') format('woff'),
+         url('geomanist-regular-webfont.ttf') format('truetype'),
+         url('geomanist-regular-webfont.svg#geomanistregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    background-color: #121212;
+}
+header{
+    padding:8px 0;
+    background-color: rgb(255, 254, 254);
+}
+.center{
+    max-width: 1280px;
+    margin:0 100px;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.logo{
+    display:inline-block;
+    vertical-align: middle;
+    
+}
+.logo img{
+    max-width: 120px;
+    width:100%;
+}
+.menu{
+    width:40%;
+    display:flex;
+    
+}
+.menu__item{
+    padding: 0 20px;
+    display: inline-block;
+}
+.menu__item a{
+    color:rgb(120,120,120);
+    margin-right:10px;
+    text-decoration: none;
+}
+.menu__item a:hover{
+    color:rgb(0, 0, 0);
+}
+.search{
+    width:60%;
+    text-align: right;
+}
+.input__search{
+    position: relative;
+    width: 200px;
+    display: inline-block;
+}
+
+.input__search #icon__lope {
+    position:absolute;
+    left: 4px;
+    top:15px;
+    color: rgb(107, 13, 13);
+}
+.input__search input[type="text"]{
+    width: 100%;
+    height: 30px;
+    padding-left: 24px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(100,100,100);
+    margin:9px 0 ;
+}
+.banner__principal{
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+
+}
+.main h2{
+    color:white;
+    width: 100%;
+    margin:30px 0;
+}
+.card__movie{
+    width:20%;
+    text-align: center;
+    color: white;
+}
+.card__movie img{
+    width:100%;
+    padding-left: 5px;
+}
+
+
+.card__movie img:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    filter: contrast(70%);
+    cursor:pointer;
+}
+.card__movie__info{
+    height: 100px;
+    margin: 20px 0 0 0;
+}
+.card__movie__info h3{
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+.card__movie__info p{
+    font-size: 12px;
+    color:gray;
+}
+
+
+.star__icon #star{
+    position: relative;
+    right: 80px;
+    top: -145px;   
+}
+.button{
+    margin-top: 10px;
+    width:100%;
+    height: 80px;
+    background-color: white;
+}
+#button__view{
+    display: flex;
+    justify-content: center;
+}
+.btn__buy{
+    color: rgb(3, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 50px;
+    padding: 5px  60px;
+    width: 200px;
+}
+.btn__buy:hover{
+    background-color: rgb(3, 0, 0);
+    color: white;
+    transition: 0.5s;
+    transform:scale(1.1);
+}
+
+/* pop__out css */
+.pop__out{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 225vh;
+    background-color: rgba(0, 0, 0, 0.377);
+    z-index:2;
+    display: none;
+    font-size: 10px;
+}
+.pop__out__content{
+    position: relative;
+    top:5%;
+    left: 0;
+    width:180vh;
+    height: 500px;
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: contrast(70%);
+    z-index:2;
+    color:white;
+}
+.pop__out__content_info{
+    position: relative;
+    width:180vh;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    z-index: 3;
+    background-color: rgba(177, 172, 172, 0.685);
+}
+.info__movie{
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.info__movie img{
+    width:100%;
+    height: 300px;
+    /* margin-top:10px; */
+    background-size: cover;
+    background-position: center;
+}
+.info__movie_sipose{
+    margin-top: 10px;
+    margin-right: 30px;
+    height:200px;
+}
+.info__movie_sipose p {
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.info__movie_sipose h1{
+    margin-bottom: 10px;
+    
+}
+.button__info{
+    display: flex;
+    margin-top: 10px;
+}
+.button__info a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(3, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px  60px;
+    width: 200px;
+    background-color: red;
+    text-align: center;
+}
+.button__info a:hover{
+    background-color: rgb(3, 0, 0);
+    color: rgb(255, 0, 0);
+    transition: 0.5s;
+    transform:scale(1.1);
+}
