@@ -7,17 +7,18 @@ var pop__out = document.querySelector(".pop__out");
 var cont=1;
 
 export const preecher = (i,j,youtube) => {
-  
-    
       if (j > 15) return;
       if (j == 0) {
+       
         main.innerHTML += `
   
-              <div class="banner__principal" style="background-image:url(https://image.tmdb.org/t/p/original/${i.backdrop_path})">
+              <div class="banner__principal" )">
+                <img id="banner__principal__img" src="https://image.tmdb.org/t/p/original/${i.backdrop_path}" alt="">
               </div>
               `;
       } else {
         if (j == 1) {
+          
           // youtube=  getVideo(i.id, j);
           // youtube.then(value => console.log(value))
           timesout();
@@ -39,6 +40,7 @@ export const preecher = (i,j,youtube) => {
                   `;
                
         } else {
+          
           // youtube=  getVideo(i.id, j);
           // youtube.then(value => console.log(value))
           timesout();
@@ -132,3 +134,20 @@ pop__out.addEventListener("click", (e) =>
     pop__out.style.display = "none";
   }
 });
+
+
+
+
+export const slide = (arrayIMG) => {
+  
+  var i = 0;
+  var time = setInterval(() => {
+    var banner__principal=document.getElementById("banner__principal__img");
+    banner__principal.src = `https://image.tmdb.org/t/p/original/${arrayIMG[i]}`;
+    i++;
+    if (i == arrayIMG.length) {
+      i = 0;
+    }
+  }, 5000);
+
+}
