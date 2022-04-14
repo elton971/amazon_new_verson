@@ -1,7 +1,10 @@
 // vou tratarde todos pedidos de API
 import{ preecher }from './index.js';
+
 import{slide}from './index.js';
+
 var apiKey = "bf02fd65c2c07a76c53443c464e8703d";
+
 var arrayIMG = [];
 
 export const requisitar = (page) => {
@@ -19,6 +22,7 @@ function videoRequisar(idFilme) {
     `https://api.themoviedb.org/3/movie/${idFilme}/videos?api_key=${apiKey}`
   );
 }
+
 let youtube = "";
 const getVideo = async (dadosFilme) => {
   for (let i = 0; i < dadosFilme.results.length; i++) {
